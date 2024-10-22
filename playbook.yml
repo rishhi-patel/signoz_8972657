@@ -14,6 +14,3 @@
     - name: Install requests==2.31.0 python package
       ansible.builtin.pip:
         name: requests==2.31.0
-    - name: Install flask python package
-      ansible.builtin.pip:
-        name: flask
