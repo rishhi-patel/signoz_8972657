@@ -14,3 +14,10 @@
     - name: Install requests==2.31.0 python package
       ansible.builtin.pip:
         name: requests==2.31.0
+    - name: deploy Docker Compose stack
+      docker_compose:
+        project_src: clickhouse-setup
+        files:
+        - docker-compose-minimal.yaml
+        pull: yes
+        state: present
