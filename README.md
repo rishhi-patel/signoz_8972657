@@ -2,9 +2,13 @@
 signoz demo with docker-compose 
 
 ```bash
-pip install -r requirements.txt
 ansible-playbook up.yml
 ```
 
-This brings up an "empty" signoz in a codespace. Use this as a starting point for instrumenting your app.
+This does docker compose up on an "empty" signoz in a codespace. Use this as a starting point for instrumenting your app.
 
+```bash
+ansible-playbook down.yml
+```
+
+This does docker compose down on the clickhouse-setup/docker-compose-minimal.yaml (the same docker-compose file from up.yml)
