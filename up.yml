@@ -1,4 +1,4 @@
-- name: Run using a project directory
+- name: bootstrap signoz
   hosts: localhost
   gather_facts: false
   tasks:
